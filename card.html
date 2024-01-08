@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all .4s;
+        }
+
+        body {
+            background: teal;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            height: 500px;
+            gap: 1rem;
+            background-color: snow;
+            margin: 1rem;
+            border-radius: .8rem;
+            overflow: hidden;
+            box-shadow: 3px 3px 7px black;
+        }
+
+        .card:hover {
+            box-shadow: none;
+        }
+
+        .image-content {
+            width: 100%;
+            height: 45%;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            padding: 0 1.5rem;
+        }
+
+        .content span {
+            color: teal;
+            line-height: 40px;
+            font-size: 25px;
+            text-transform: capitalize;
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .content span:first-child {
+            color: #575757;
+            display: block;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        .content p {
+            margin-bottom: .5rem;
+            line-height: 23px;
+        }
+    </style>
+    <title>Card | by Keppuraja</title>
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="container">
+        <!-- card content 1-->
+        <div class="card">
+            <div class="image-content">
+                <img src="/img/bg-4.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>Nature</span>
+                <span>Nature scenary best plan</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, rerum pariatur quod sapiente, dolorum
+                    ullam reprehenderit perferendis sunt explicabo quas nam eveniet perspiciatis nostrum
+                    consequatur.</p>
+            </div>
+        </div>
+
+        <!-- card content 2-->
+        <div class="card">
+            <div class="image-content">
+                <img src="/img/bg-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>Travel</span>
+                <span>Tirp Planning for Total Beginners</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, rerum pariatur quod sapiente, dolorum
+                    ullam reprehenderit perferendis sunt explicabo quas nam eveniet perspiciatis nostrum
+                    consequatur.</p>
+            </div>
+        </div>
+
+        <!-- card content 3-->
+        <div class="card">
+            <div class="image-content">
+                <img src="/img/bg-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>City</span>
+                <span>going around the top city</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, rerum pariatur quod sapiente, dolorum
+                    ullam reprehenderit perferendis sunt explicabo quas nam eveniet perspiciatis nostrum
+                    consequatur.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | KEPPURAJA</title>
+    <link rel="shortcut icon" href="./img/profile-icon.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- navigation content start -->
+    <nav class="navbar" id="navbar">
+        <span class="logo">Portfolio</span>
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="./about.html">About me</a>
+            </li>
+            <li class="active">
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="burger-container" onclick="ShowNavbar()">
+            <span class="burger-items"></span>
+            <span class="burger-items"></span>
+            <span class="burger-items"></span>
+        </div>
+    </nav>
+    <div id="sideNavbar">
+        <ul>
+
+            <div class="cross-container" onclick="hideNavbar()">
+                <div class="cross-items"></div>
+                <div class="cross-items"></div>
+            </div>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="./about.html">About me</a>
+            </li>
+            <li class="active">
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- navigation content end -->
+
+    <!-- Contact content start -->
+
+    <section id="contact-content">
+        <h1 class="content-heading">Contact</h1>
+        <div id="inner-contact-content">
+            <div id="social-media-content">
+                <span class="social-media">
+                    <a href="https://www.facebook.com/">
+                        <img src="./img/facebook.png" alt=""></a>
+                </span>
+                <span class="social-media">
+                    <a href="https://in.linkedin.com/">
+                        <img src="./img/linkedin.png" alt=""></a>
+                </span>
+                <span class="social-media">
+                    <a href="https://wa.me/+917358905330?text=Hi keppuraja, I am visit your portfolio. So I want to (type what you want)"
+                        target="_blank">
+                        <img src="./img/whatsapp.png" alt=""></a>
+                </span>
+                <span class="social-media">
+                    <a href="https://www.instagram.com/__rasukutty__/">
+                        <img src="./img/instagram.png" alt=""></a>
+                </span>
+                <span class="social-media">
+                    <a href="https://twitter.com/">
+                        <img src="./img/twitter.png" alt=""></a>
+                </span>
+            </div>
+            <div id="contact-form">
+                <h1>Feedback</h1>
+                <form action="mailto:keppuraja3@gmail.com" method="post">
+                    <input type="text" placeholder="Enter Name" required>
+                    <input type="email" placeholder="Enter Email" required>
+                    <textarea placeholder="Enter your feedback" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact content end -->
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

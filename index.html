@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | KEPPURAJA</title>
+  <link rel="shortcut icon" href="./img/profile-icon.png" type="image/png">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Sample text for Portfolio</h1>
+  <!-- navigation content start -->
+  <nav class="navbar" id="navbar">
+    <span class="logo">Portfolio</span>
+    <ul>
+      <li class="active">
+        <a href="./index.html">Home</a>
+      </li>
+      <li>
+        <a href="./projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="./about.html">About me</a>
+      </li>
+      <li>
+        <a href="./contact.html">Contact</a>
+      </li>
+    </ul>
+    <div class="burger-container" onclick="ShowNavbar()">
+      <span class="burger-items"></span>
+      <span class="burger-items"></span>
+      <span class="burger-items"></span>
     </div>
+  </nav>
+  <div id="sideNavbar">
+    <ul>
+
+      <div class="cross-container" onclick="hideNavbar()">
+        <div class="cross-items"></div>
+        <div class="cross-items"></div>
+      </div>
+      <li class="active">
+        <a href="./index.html">Home</a>
+      </li>
+      <li>
+        <a href="./projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="./about.html">About me</a>
+      </li>
+      <li>
+        <a href="./contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!-- navigation content end -->
+
+
+  <!-- Home content start -->
+  <section id="home-content">
+
+    <!-- left side content -->
+    <div id="Lside">
+      <h1 id="name-heading">Hello👋, &ThinSpace; I'm
+        <span>KEPPURAJA</span>
+      </h1>
+      <span id="professtion">
+        I am a <span>fullstack web developer</span>
+      </span>
+      <span id="declaration">
+        <span>Welcome to Keppuraja's portfolio! I'm a Fullstack developer with a passion for information technologies.
+          Through this portfolio, I aim to showcase my journey, skills, and the projects that define my
+          professional identity.</span>
+      </span>
+    </div>
+
+    <!-- right side content -->
+    <div class="Rside">
+      <div id="image-content">
+        <img src="./img/porfile-img-removebg-preview.png" alt="porfile-image">
+      </div>
+    </div>
+  </section>
+  <!-- Home content end -->
+
+  <script src="./js/script.js"></script>
 </body>
+
 </html>

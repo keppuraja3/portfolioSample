@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///home/keppuraja/Desktop/Projects/Sample_Projects/todo.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: "popins";
+            src: url(/fonts/Poppins/Poppins-Regular.ttf);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            font-family: "popins";
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            background: #fcdb9e;
+            padding: 1.5rem;
+        }
+
+        #heading {
+            text-transform: capitalize;
+        }
+
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #content input {
+            padding: .5rem;
+            margin: .5rem 0;
+            border-radius: .5rem;
+            outline: none;
+            border: 1px solid gray;
+        }
+
+        #addBtn {
+            background: rgb(0, 235, 0);
+            padding: .5rem;
+            border-radius: .5rem;
+            color: #fff;
+            font-weight: 900;
+            font-size: 1rem;
+            cursor: pointer;
+            border: 1px solid #000;
+        }
+
+        ul {
+            display: grid;
+            width: 100%;
+            place-items: center;
+            margin: 1rem 0;
+            gap: 1rem;
+        }
+
+        li {
+            width: clamp(max-content, 150px, 80%);
+            /* min-width: max-content;
+            max-width: 80%; */
+            height: 100%;
+            padding: .4rem;
+            border-radius: .3rem;
+            border: 1px solid gray;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            justify-content: space-between;
+            background-color: lightgoldenrodyellow;
+        }
+
+        #delBtn {
+            background: crimson;
+            padding: .2rem;
+            margin: 0 .5rem;
+            border-radius: .5rem;
+            color: #fff;
+            font-weight: 900;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #000;
+            border: 1px solid #000;
+        }
+    </style>
+    <title>Todo List | by Keppuraja</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 id="heading">todo task list</h1>
+
+        <div id="content">
+            <input id="input" type="text" placeholder="Enter the task">
+            <button id="addBtn" onclick="addTask()" type="button">Add Task</button>
+
+            <ul class="tasklist">
+
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script>
+        //variable declaration:
+        const input = document.querySelector("#input");
+        const tasklist = document.querySelector(".tasklist");
+
+        function addTask() {
+            let list = document.createElement("li");
+
+            list.innerHTML = input.value + "<button id='delBtn' onclick='deleteTask(event)'>Delete</button>";
+            tasklist.append(list);
+            input.value = "";
+
+        }
+
+        function deleteTask(event) {
+            event.target.parentElement.remove()
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

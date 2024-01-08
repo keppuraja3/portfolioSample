@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | KEPPURAJA</title>
+    <link rel="shortcut icon" href="./img/profile-icon.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- navigation content start -->
+    <nav class="navbar" id="navbar">
+        <span class="logo">Portfolio</span>
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="active">
+                <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="./about.html">About me</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="burger-container" onclick="ShowNavbar()">
+            <span class="burger-items"></span>
+            <span class="burger-items"></span>
+            <span class="burger-items"></span>
+        </div>
+    </nav>
+    <div id="sideNavbar">
+        <ul>
+
+            <div class="cross-container" onclick="hideNavbar()">
+                <div class="cross-items"></div>
+                <div class="cross-items"></div>
+            </div>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="active">
+                <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="./about.html">About me</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- navigation content end -->
+
+    <!-- Portfolio content start -->
+    <section id="portfolio-content">
+
+
+        <h1 class="content-heading">Projects</h1>
+        <div id="project-container">
+
+            <div class="project-items">
+                <a href="./grid.html">
+                    <img src="./img/project1.png" alt="projec-1">
+                    <div class="porject-view">
+                        <span>Grid Template</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-items">
+                <a href="./Todo-List.html">
+                    <img src="./img/project2.png" alt="projec-2">
+                    <div class="porject-view">
+                        <span>Todo List</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-items">
+                <a href="./linkedin-form.html">
+                    <img src="./img/project3.png" alt="projec-3">
+                    <div class="porject-view">
+                        <span>Linkedin Login</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-items">
+                <a href="./Project_Login/index.html">
+                    <img src="./img/project-4.png" alt="projec-4">
+                    <div class="porject-view">
+                        <span>Login Form</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio content End -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
